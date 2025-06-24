@@ -1,0 +1,73 @@
+📝 Project Flow Explanation: Restaurant Billing and Management System
+The flowchart illustrates the structured interaction within the Restaurant Billing and Management System, which is divided into three main modules: Admin Panel, Customer Panel, and Exit.
+
+🔶 1. Start & Main Menu
+The system begins at a Start node.
+
+The user is directed to the Main Menu, where they can choose between:
+
+Admin Panel
+
+Customer Panel
+
+Exit
+
+🔷 2. Admin Panel
+Upon selecting the Admin Panel, the user is prompted with options to:
+
+Login
+
+Register a new user
+
+Return to Main Menu
+
+On successful login (username and password), the admin can:
+
+Modify Menu
+
+Display Menu
+
+Logout (which leads to end of admin session)
+
+🔶 3. Customer Panel
+The Customer Panel prompts the user to:
+
+Login
+
+Return to Main Menu
+
+After entering valid credentials, the customer has options to:
+
+Display Menu
+
+Order Food
+
+Logout
+
+Upon placing an order, the system:
+
+Displays the bill
+
+Exports the data to MySQL database
+
+Then checks:
+
+If user wants to create a new bill, it loops back to order again.
+
+If not, the process ends.
+
+🔴 4. Exit
+If the user chooses to Exit from the main menu, the program terminates.
+
+✅ Summary
+This flow ensures:
+
+Role-based access for admin and customer.
+
+User authentication before accessing functionalities.
+
+Seamless integration with MySQL for persistent data storage.
+
+A loop-based ordering system allowing multiple bills without restarting the session.
+
+This logical structure makes the system efficient, secure, and user-friendly for real-time restaurant operations.
